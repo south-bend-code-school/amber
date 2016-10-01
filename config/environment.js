@@ -20,12 +20,15 @@ module.exports = function(environment) {
       messagingSenderId: "537443621255"
     },
     contentSecurityPolicy: {
-      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'script-src': "'self' wss://*.firebaseio.com",
       'frame-src': "'self' https://*.firebaseapp.com",
       'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
     },
 
     APP: {
+      NodeRed: {
+        URL: "https://mys3test.mybluemix.net",
+      },
       // Here you can pass flags/options to your application instance
       // when it is created
     }

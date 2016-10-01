@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('main', {path: '/authorities'}, function() {
+    this.route('dashboard', {path: '/dashboard'}, function() {
+      this.route('createAlert', {path: '/createAlert'});
+    });
+  });
 });
 
 export default Router;
