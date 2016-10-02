@@ -1,0 +1,14 @@
+{{#if scan.score}}
+<div class="grid" style="background-color:green">
+  <div class="thumbnail-div" style="background-image:url('{{scan.img}}')"></div>
+  <!-- <p>Match: {{scan.score}}</p> -->
+  <h4 class="matchspace">match: {{convertedScore}}% </h4>
+</div>
+{{else}}
+<div class="grid" style="background-color:red">
+  <div class="thumbnail-div" style="background-image:url('{{scan.img}}')"></div>
+  <!-- <p>Match: {{scan.score}}</p> -->
+  <h4 class="matchspace">match: {{convertedScore}}%</h4>
+
+</div>
+{{/if}}

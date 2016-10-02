@@ -11,7 +11,10 @@ Router.map(function() {
     this.route('dashboard', {path: '/dashboard'}, function() {
       this.route('createAlert', {path: '/createAlert'});
     });
+    this.route('thank-you');
+    this.route('create-alert');
   });
+  this.route('thank-you');
 });
 
 export default Router;
